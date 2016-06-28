@@ -8,7 +8,6 @@
 
 > 原文：[http://tadeuzagallo.com/blog/writing-a-lambda-calculus-interpreter-in-javascript/](http://tadeuzagallo.com/blog/writing-a-lambda-calculus-interpreter-in-javascript/)
 
------
 
 #  两百行内 JavaScript 打造lambda 演算解释器
 

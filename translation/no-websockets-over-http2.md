@@ -12,7 +12,7 @@
 > 译者注： 《深入浅出 Node.js》第七章讲述 WebSocket 服务的构建中，对本文中反复提到的 ``Upgrade`` 有比较详细的说明。
 
 
-** NO WEBSOCKETS OVER HTTP/2 **.
+> NO WEBSOCKETS OVER HTTP/2.
 
 我这样说的意思是，在 HTTP/2 协议里，无法像在 HTTP/1.1 中把连接（connection）协商或提升为 WebSocket那样，如[RFC 6455](https://tools.ietf.org/html/rfc6455) 所描述的 —— 这个规范（[RFC 6455](https://tools.ietf.org/html/rfc6455)）详述了在一个 HTTP/1.1 请求中，客户端如何使用 ``Upgrade: ``将连 http 接转换为 WebSocket 连接。
 
