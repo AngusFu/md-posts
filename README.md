@@ -4,10 +4,10 @@ I am Wemlin(文蔺) from China, now working as a web developer.
 
 This repository will witness my progress & growth in this industry.
 
-Your contact is appreciated if any question / problem was here.
+Your contact is appreciated if any question/problem.
 
 
-## translation(翻译)
+## translation 
 
 - [NO WEBSOCKETS OVER HTTP/2](./translation/no-websockets-over-http2.md)
 
