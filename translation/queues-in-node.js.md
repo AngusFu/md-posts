@@ -1,9 +1,13 @@
 # Node.js 中的队列
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/662](http://www.zcfy.cc/article/662)
+
 > 原文：[http://blog.yld.io/2016/05/10/introducing-queues/](http://blog.yld.io/2016/05/10/introducing-queues/)
+
 
 ![Node.js 中的队列](http://p1.qhimg.com/t0195a38b6ea509460d.png)
 

@@ -1,8 +1,11 @@
 # 防火墙背后的笔记：Web 设计在中国
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/688](http://www.zcfy.cc/article/688)
+
 > 原文：[http://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281](http://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281)
 
 > 译者注：本文写作于 2014 年 10 月。

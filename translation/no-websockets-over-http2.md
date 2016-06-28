@@ -1,11 +1,16 @@
 #  No WebSockets Over HTTP/2
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/657](http://www.zcfy.cc/article/657)
+
 > 原文：[https://daniel.haxx.se/blog/2016/06/15/no-websockets-over-http2/](https://daniel.haxx.se/blog/2016/06/15/no-websockets-over-http2/)
 
+
 > 译者注： 《深入浅出 Node.js》第七章讲述 WebSocket 服务的构建中，对本文中反复提到的 ``Upgrade`` 有比较详细的说明。
+
 
 ** NO WEBSOCKETS OVER HTTP/2 **.
 

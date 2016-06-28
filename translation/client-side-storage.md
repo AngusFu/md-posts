@@ -1,9 +1,13 @@
 # 客户端存储
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/660](http://www.zcfy.cc/article/660)
+
 > 原文：[http://www.html5rocks.com/en/tutorials/offline/storage/](http://www.html5rocks.com/en/tutorials/offline/storage/)
+
 
 # 客户端存储
 

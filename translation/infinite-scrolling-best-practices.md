@@ -1,8 +1,11 @@
 # 无限滚动加载最佳实践
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/673](http://www.zcfy.cc/article/673)
+
 > 原文：[https://uxplanet.org/infinite-scrolling-best-practices-c7f24c9af1d#.1xzr65wil](https://uxplanet.org/infinite-scrolling-best-practices-c7f24c9af1d#.1xzr65wil)
 
 

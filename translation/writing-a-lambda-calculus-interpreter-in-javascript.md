@@ -1,8 +1,11 @@
 #  两百行内 JavaScript 打造lambda 演算解释器
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/661](http://www.zcfy.cc/article/661)
+
 > 原文：[http://tadeuzagallo.com/blog/writing-a-lambda-calculus-interpreter-in-javascript/](http://tadeuzagallo.com/blog/writing-a-lambda-calculus-interpreter-in-javascript/)
 
 -----
