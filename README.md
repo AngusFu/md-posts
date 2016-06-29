@@ -36,3 +36,6 @@ Your contact is appreciated if any question/problem.
 - [关于JavaScript 函数传参](./blog/javascript-argument.md)
 
 
+- [使用 ava 和 jsdom 测试前端界面](./blog/test-with-ava-jsdom.md)
+
+
