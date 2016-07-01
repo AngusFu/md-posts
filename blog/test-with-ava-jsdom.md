@@ -248,3 +248,14 @@ ava 还有很多的用法和需要注意的地方。最好的办法还是看文�
 向做出这些工具的大神们致敬。
 
 
+## 更新
+
+### a 标签点击事件的坑
+
+``a`` 标签的点击事件用了事件代理，然后通过手动触发无效。
+
+经测试，在浏览器也有这种问题。
+
+解决办法是直接使用 ``$('a')[0].click()``，原生的 ``click`` 方法比较靠谱。
+    
+参考： [http://stackoverflow.com/questions/773639/how-can-i-simulate-an-anchor-click-via-jquery](http://stackoverflow.com/questions/773639/how-can-i-simulate-an-anchor-click-via-jquery)
