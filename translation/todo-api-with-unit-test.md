@@ -57,7 +57,7 @@ npm install express mongoose method-override morgan body-parser cors —save-dev
 
 我们会使用 Mongoose 作为 Node.js 中的对象文档模型（Object Document Model），它工作起来和典型的 ORM一样，就像 Rails 中用 ActiveRecord一样。Mongoose 帮我们更方便地访问 MongoDB 命令。首先我们为 Todo API 定义 schema。
 
-```
+```javascript
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 // Defining schema for our Todo API
@@ -92,7 +92,8 @@ Mongoose 中的一切都是从 schema 开始。每个 schema 对应一个 MongoD
 我们继续，搭建 Express server。
 
 首先，我们要按下面这样引入项目依赖：
-```
+
+```javascript
 var express = require('express');
 var mongoose = require('mongoose');
 var morgan = require('morgan');
@@ -104,7 +105,7 @@ var config = require('./app/config/config');
 
 接着，配置 Express 中间件：
 
-```
+```javascript
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'})); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
@@ -119,7 +120,7 @@ app.use(methodOverride());
 
 有时候本地主机名改变时会出现一些问题。
 
-```
+```javascript
 //Connecting MongoDB using mongoose to our application
 mongoose.connect(config.db);
 
@@ -137,7 +138,8 @@ app.listen(config.port, function(err){
 ```
 
 使用下面的命令启动服务器：
-```
+
+``` bash
 //starting our node server
 > node server.js
 App listening on port 2000
@@ -150,14 +152,16 @@ App listening on port 2000
 ### 搭建测试环境
 
 之前提到过，我们会使用 Mocha 作为测试运行器，Chai 作为断言库，用 Sinon.js 模拟 Todo model。首先安装单元测试环境：
-```
+
+```bash
 > npm install mocha chai sinon sinon-mongoose --save
 ```
 
 使用 `sinon-mongoose` 模块来模拟 Mongoose 定义的 MongoDB 模型。
 
 现在，引入测试的依赖：
-```
+
+```javascript
 var sinon = require('sinon');
 var chai = require('chai');
 var expect = chai.expect;
@@ -184,7 +188,7 @@ var Todo = require('../../app/models/todo.model');
 
 来使用 `sinon.mock` 给 Todo model 据，然后使用 `find` 方法获取数据库中存储的所有 todo。
 
-```
+```javascript
     describe("Get all todos", function(){
          // Test will pass if we get all todos
         it("should return all todos", function(done){
@@ -219,7 +223,7 @@ var Todo = require('../../app/models/todo.model');
 
 保存一个新的 todo，需要用一个示例任务来模拟 Todo model。使用我们创建的Todo model来检验 mongoose 的save 方法保存 todo 到数据库的结果。
 
-```
+```javascript
     // Test will pass if the todo is saved
     describe("Post a new todo", function(){
         it("should create new post", function(done){
@@ -255,7 +259,7 @@ var Todo = require('../../app/models/todo.model');
 
 本节我们来检验 API 的 update 功能。这和上面的例子很类似，除了我们要使用`withArgs`方法，模拟带有参数 ID 的 Todo model。
 
-```
+```javascript
   // Test will pass if the todo is updated based on an ID
   describe("Update a new todo by id", function(){
     it("should updated a todo by id", function(done){
@@ -291,7 +295,7 @@ var Todo = require('../../app/models/todo.model');
 
 这是 Todo API 单元测试的最后一小节。本节我们将基于给定的 ID ，使用 mongoose 的 remove 方法，测试 API 的 delete 功能。
 
-```
+```javascript
     // Test will pass if the todo is deleted based on an ID
     describe("Delete a todo by id", function(){
         it("should delete a todo by id", function(done){
@@ -320,11 +324,12 @@ var Todo = require('../../app/models/todo.model');
     });
 
 ```
+
 每次我们都要还原（restore） Todomock，确保下次它还能正常工作。
 
 每次运行测试用例的时候，所有的都会失败，因为我们的生产代码还没写好呢。我们会运行自动化测试，直至所有单元测试都通过。
 
-```
+```bash
 > npm test
 
   Unit test for Todo API
@@ -342,7 +347,8 @@ var Todo = require('../../app/models/todo.model');
       8) should return error if delete action is failed
 
   0 passing (17ms)
-  8 failing 
+  8 failing
+
 ```
 
 你在命令行终端上运行`npm test`的时候，会得到上面的输出信息，所有的测试用例都失败了。需要根据需求和单元测试用例来编写应用逻辑，使我们的程序更加稳定。
@@ -354,7 +360,8 @@ var Todo = require('../../app/models/todo.model');
 ## 配置路由
 
 对客户端和服务端的 web 应用来说，路由配置是最重要的一部分。在我们的应用中，使用 Express Router 的实例来处理所有路由。来给我们的应用创建路由。
-```
+
+```javascript
 var express = require('express');
 var router = express.Router();
 
@@ -381,7 +388,7 @@ module.exports = router;
 
 现在我们差不多在教程的最后阶段了，开始来写控制器代码。在典型的 web 应用里，controller 控制着保存、检索数据的主要逻辑，还要做验证。来写Todo API 真正的控制器，运行自动化单元测试直至测试用例全部通过。
 
-```
+```javascript
     var Todo = require('../models/todo.model');
 
     var TodoCtrl = {
@@ -438,7 +445,8 @@ module.exports = TodoCtrl;
 ## 运行测试用例
 
 现在我们完成了应用的测试用例和控制器逻辑两部分。来跑一下测试，看看最终结果：
-```
+
+```bash
 > npm test
   Unit test for Todo API
     Get all todo
