@@ -36,7 +36,8 @@ Your contact is appreciated if any question/problem.
 
 - [关于JavaScript 函数传参](./blog/javascript-argument.md)
 
-
 - [使用 ava 和 jsdom 测试前端界面](./blog/test-with-ava-jsdom.md)
+
+- [判断资源并行加载完成的三种办法：计数、Promise及 $.Deferred](./blog/when-are-all-resources-all-loaded.md)
 
 
