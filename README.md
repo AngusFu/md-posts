@@ -40,4 +40,4 @@ Your contact is appreciated if any question/problem.
 
 - [判断资源并行加载完成的三种办法：计数、Promise及 $.Deferred](./blog/when-are-all-resources-all-loaded.md)
 
-
+- [Node.js .sh scripts Manager](./blog/Node.js-sh-scripts-Manager.md)
