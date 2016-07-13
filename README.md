@@ -23,6 +23,7 @@ Your contact is appreciated if any question/problem.
 
 - [测试驱动开发：使用 Node.js 和 MongoDB 构建 Todo API ](./translation/todo-api-with-unit-test.md)
 
+- [给 Service Worker 开后门](./translation/backdoor-service-worker.md)
 
 ## notes & articles
 
