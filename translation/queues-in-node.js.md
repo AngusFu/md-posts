@@ -8,7 +8,6 @@
 
 > 原文：[http://blog.yld.io/2016/05/10/introducing-queues/](http://blog.yld.io/2016/05/10/introducing-queues/)
 
-
 ![Node.js 中的队列](http://p1.qhimg.com/t0195a38b6ea509460d.png)
 
 这是深入探索 Node.js 中使用工作队列（work queues）管理异步工作流的系列文章的第一篇，来自[the Node Patterns series](http://nodepatternsbooks.com/)。

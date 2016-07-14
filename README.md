@@ -4,7 +4,9 @@ I am Wemlin(文蔺) from China, now working as a web developer.
 
 This repository will witness my progress & growth in this industry.
 
-Your contact is appreciated if any question/problem.
+Your [contact](mailto:angusfu1126@qq.com) is appreciated if any question/problem.
+
+You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 
 ## translation 
