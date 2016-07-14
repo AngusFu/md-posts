@@ -1,3 +1,7 @@
+> 原地址: [https://segmentfault.com/a/1190000005871353](https://segmentfault.com/a/1190000005871353)
+
+> 时间: 2016-07-04
+
 # 判断资源并行加载完成的三种办法：计数、Promise及 $.Deferred
 
 ## 方法一：计数比较

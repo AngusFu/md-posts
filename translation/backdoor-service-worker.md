@@ -1,8 +1,11 @@
 # 给 Service Worker 开后门
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/826](http://www.zcfy.cc/article/826)
+
 > 原文：[https://medium.com/@adactio/backdoor-service-workers-86d241d79996#.bfuq4cdih](https://medium.com/@adactio/backdoor-service-workers-86d241d79996#.bfuq4cdih)
 
 在[渐进式 Web App 开发峰会(Progressive Web App dev Summit)](https://adactio.com/journal/10866)上展示的时候，我花了[差不多 20 分钟](https://youtu.be/EyyEfxrk_NU?t=21m4s)讲了这样一点：

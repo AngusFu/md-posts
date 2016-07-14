@@ -1,6 +1,8 @@
+> 原地址: [https://segmentfault.com/a/1190000005834279](https://segmentfault.com/a/1190000005834279)
+
+> 时间: 2016-06-29
 
 # 使用 ava 和 jsdom 测试前端界面
-
 
 ## 交代前因
 

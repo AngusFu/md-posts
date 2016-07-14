@@ -25,6 +25,8 @@ Your contact is appreciated if any question/problem.
 
 - [给 Service Worker 开后门](./translation/backdoor-service-worker.md)
 
+- [盘点即将影响世界的九大创新](./translation/9-innovations-that-could-become-the-next-big-thing.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](./blog/about-rem-layout.md)
