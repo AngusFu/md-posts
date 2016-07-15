@@ -129,7 +129,7 @@ function checkDB(dbPath) {
 }
 
 function saveDB(dbPath, DBData) {
-    fs.writeFileSync(dbPath, JSON.stringify(DBData, null, 4), 'utf-8');
+    fs.writeFileSync(dbPath, JSON.stringify(DBData), 'utf-8');
 }
 
 // ===========================================================
