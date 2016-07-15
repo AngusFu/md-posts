@@ -41,7 +41,7 @@ if (category === '-t' && filename) {
     });
 
     saveDB(dbjsonPath, DBData);
-    obj.stop();
+    spinner.stop();
     return;
 }
 
@@ -59,7 +59,7 @@ if (category === '-a' && filename) {
     });
 
     saveDB(dbjsonPath, DBData);
-    obj.stop();
+    spinner.stop();
     return;
 }
 
@@ -77,7 +77,7 @@ if (category === '-d') {
     saveDB(dbjsonPath, DBData);
     exec(`npm run deploy`, function(error, stdout, stderr) {
         console.log(stdout);
-        obj.stop();
+        spinner.stop();
     });
     return;
 }
@@ -94,7 +94,7 @@ if (category === '-d') {
 //         'notes & articles': articles
 //     });
 //     saveDB(dbjsonPath, DBData);
-//     obj.stop();
+//     spinner.stop();
 //     return;
 // }
 
