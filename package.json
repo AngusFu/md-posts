@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy": "git add -A && git commit -m 'commit' && git push"
+        "deploy": "git add -A && git commit -m commit && git push"
     },
     "bin": {
         "post": "./index.js"
