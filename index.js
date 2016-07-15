@@ -78,7 +78,7 @@ if (category === '-d') {
     exec(`npm run deploy`, function(error, stdout, stderr) {
         console.log(stdout);
         spinner.stop();
-        console.log('\n\n done!!!');
+        console.log('\n\ndone!!!');
     });
     return;
 }
@@ -180,8 +180,7 @@ function collectMeta(collection, dir) {
     var H1_RE = /(?:\n|^)#\s*([^\n#]+)\s*\n/;
     collection.forEach(function(item) {
         try {
-            // TODO
-            // no more repeat
+            if (item.title && item.url) return;
             var content = fs.readFileSync(joinp(dir, item.name + '.md')).toString(),
                 macth = content.match(H1_RE),
                 title = macth && macth[1];
