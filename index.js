@@ -78,7 +78,7 @@ if (category === '-d') {
     exec(`npm run deploy`, function(error, stdout, stderr) {
         console.log(stdout);
         spinner.stop();
-        console.log('\nn done!!!');
+        console.log('\n\n done!!!');
     });
     return;
 }
