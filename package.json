@@ -1,23 +1,26 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "I am Wemlin(文蔺) from China, now working as a web developer.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy": "git add -A && git commit -m commit && git push"
-    },
-    "bin": {
-        "post": "./index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/AngusFu/blog.git"
-    },
-    "author": "angusfu1126@qq.com",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/AngusFu/blog/issues"
-    },
-    "homepage": "https://github.com/AngusFu/blog#readme"
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "I am Wemlin(文蔺) from China, now working as a web developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git add -A && git commit -m commit && git push"
+  },
+  "bin": {
+    "post": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngusFu/blog.git"
+  },
+  "author": "angusfu1126@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngusFu/blog/issues"
+  },
+  "homepage": "https://github.com/AngusFu/blog#readme",
+  "devDependencies": {
+    "cli-spinner": "^0.2.5"
+  }
 }

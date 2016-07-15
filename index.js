@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+var Spinner = require('cli-spinner').Spinner;
 
 var fs = require('fs');
 var path = require('path');
@@ -7,6 +8,10 @@ var exec = require('child_process').exec;
 var argvs = Array.from(process.argv).slice(2);
 var category = argvs[0];
 var filename = argvs[1];
+
+var spinner = new Spinner('processing.. %s');
+spinner.setSpinnerString('|/-\\');
+spinner.start();
 
 var dbjsonPath = './db.json';
 checkDB(dbjsonPath);
@@ -35,7 +40,9 @@ if (category === '-t' && filename) {
         createAt: +new Date
     });
 
-    return saveDB(dbjsonPath, DBData);
+    saveDB(dbjsonPath, DBData);
+    obj.stop();
+    return;
 }
 
 // post -a [name]
@@ -51,7 +58,9 @@ if (category === '-a' && filename) {
         createAt: +new Date
     });
 
-    return saveDB(dbjsonPath, DBData);
+    saveDB(dbjsonPath, DBData);
+    obj.stop();
+    return;
 }
 
 
@@ -66,7 +75,13 @@ if (category === '-d') {
     });
 
     saveDB(dbjsonPath, DBData);
-    exec(`npm run deploy`);
+    exec(`npm run deploy`, function(error, stdout, stderr) {
+        if (err) {
+            console.log(err);
+        }
+        console.log(stdout);
+        obj.stop();
+    });
     return;
 }
 
@@ -81,7 +96,9 @@ if (category === '-d') {
 //         translation: translations,
 //         'notes & articles': articles
 //     });
-//     return saveDB(dbjsonPath, DBData);
+//     saveDB(dbjsonPath, DBData);
+//     obj.stop();
+//     return;
 // }
 
 
