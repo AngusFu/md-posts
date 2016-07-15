@@ -29,6 +29,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [盘点即将影响世界的九大创新](./translation/9-innovations-that-could-become-the-next-big-thing.md)
 
+- [WebP 支持：超出你想象](./translation/webp-support.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](./blog/about-rem-layout.md)
