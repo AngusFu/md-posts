@@ -72,26 +72,33 @@ if (category === '-d') {
 
 // init db.json with current files
 // post -i
-if (category === '-i') {
-    updateCurrentDirectory({
-        './translation': translations,
-        './blog': articles
-    });
-    rewriteReadMe({
-        translation: translations,
-        'notes & articles': articles
-    });
-    return saveDB(dbjsonPath, DBData);
-}
+// if (category === '-i') {
+//     updateCurrentDirectory({
+//         './translation': translations,
+//         './blog': articles
+//     });
+//     rewriteReadMe({
+//         translation: translations,
+//         'notes & articles': articles
+//     });
+//     return saveDB(dbjsonPath, DBData);
+// }
 
 
 // else
+// console.log(
+// `Usage: 
+//   > post -t [name]    --- add translations
+//   > post -a [name]    --- add articles
+//   > post -d           --- deploy
+//   > post -i           --- init db.json with current files
+// `);
+
 console.log(
 `Usage: 
   > post -t [name]    --- add translations
   > post -a [name]    --- add articles
   > post -d           --- deploy
-  > post -i           --- init db.json with current files
 `);
 
 
