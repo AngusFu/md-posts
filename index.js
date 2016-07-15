@@ -76,9 +76,6 @@ if (category === '-d') {
 
     saveDB(dbjsonPath, DBData);
     exec(`npm run deploy`, function(error, stdout, stderr) {
-        if (err) {
-            console.log(err);
-        }
         console.log(stdout);
         obj.stop();
     });
