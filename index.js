@@ -114,6 +114,7 @@ console.log(
   > post -a [name]    --- add articles
   > post -d           --- deploy
 `);
+spinner.stop();
 
 
 
