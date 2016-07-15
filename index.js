@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 var Spinner = require('cli-spinner').Spinner;
+var spinner = new Spinner('processing.. %s');
+spinner.setSpinnerString('|/-\\');
+spinner.start();
 
 var fs = require('fs');
 var path = require('path');
@@ -8,10 +11,6 @@ var exec = require('child_process').exec;
 var argvs = Array.from(process.argv).slice(2);
 var category = argvs[0];
 var filename = argvs[1];
-
-var spinner = new Spinner('processing.. %s');
-spinner.setSpinnerString('|/-\\');
-spinner.start();
 
 var dbjsonPath = './db.json';
 checkDB(dbjsonPath);
