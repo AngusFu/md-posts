@@ -1,9 +1,12 @@
 # HTTP/2 Server Push 实践：单 Link  报头包含多资源场景
 
 > 本文转载自：[众成翻译](http://www.zcfy.cc)
+
 > 译者：[文蔺](http://www.zcfy.cc/@wemlin)
+
 > 链接：[http://www.zcfy.cc/article/883](http://www.zcfy.cc/article/883)
-> 原文：[https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/ ](https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/ )
+
+> 原文：[https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/](https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/)
 
 ## 译者注
 
@@ -69,6 +72,7 @@ link:</assets/css/screen.css?v=5bb156d854>; rel=preload; as=style, </content/ima
 四月份的时候，我们[宣布](https://blog.cloudflare.com/announcing-support-for-http-2-server-push-2/)为所有的 CloudFlare  网站添加了 [HTTP/2 Server Push](https://www.cloudflare.com/http2/server-push/) 试验性支持。这样做是为了让客户能够在该新功能的基础上进行迭代。
 
 ![](https://blog.cloudflare.com/content/images/2016/06/1673801831_a93ecfc3c4_z.jpg)
+
 <small>[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) [image](https://www.flickr.com/photos/mryipyop/1673801831/in/photolist-3xUEYg-nMS6rx-jvSsLx-9oBV3s-8KH2YK-o54g8R-8h4bmw-eapSfS-cj4No3-nMSXLP-nMRZQJ-iNpH9k-hcr3m3-nMS6ui-5RDVrK-fAaYES-nMXwba-cNFT3N-iZDTWg-k5VzKt-jeJE8T-7bM32E-d3rznG-89jZ9e-aVLkBT-4y2kdD-qtKzjY-62Yv2h-5WcKeC-87jJdA-5Es3vn-bQ8W5a-7DhbKd-hE5oza-6NutL7-5WLwFt-hcnrny-5WAoU1-5mSoVV-8RSQ7A-gXiVcG-5Wp6pS-8GFkMr-hcoeN9-bC1zH5-ePG8BQ-hcokfv-hcpgme-hcqQ59-qUkfTa) by [https://www.flickr.com/photos/mryipyop/](https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/Mike)</small>
 
 我们的 Server Push 实现，利用了 [HTTP `Link`](https://blog.cloudflare.com/announcing-support-for-http-2-server-push-2/#fnref:1) 报头，这在 W3C [Preload](https://www.w3.org/TR/preload/) 工作草案中有详细描述。
