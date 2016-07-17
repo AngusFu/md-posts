@@ -32,6 +32,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [Hybrid or Native: 适合工作的才是最好的](translation/hybrid-or-native-mobile-app-use-the-right-tool-for-the-job.md)
 
+- [HTTP/2 Server Push 实践：单 Link  报头包含多资源场景](translation/http-2-server-push-with-multiple-assets-per-link-header.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
