@@ -34,6 +34,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [HTTP/2 Server Push 实践：单 Link  报头包含多资源场景](translation/http-2-server-push-with-multiple-assets-per-link-header.md)
 
+- [移动开发中的仿真器与模拟器](translation/how-do-mobile-emulators-even.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
