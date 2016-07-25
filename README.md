@@ -40,6 +40,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [从发展历史理解 ES6 Module](translation/understanding-es6-modules-via-their-history.md)
 
+- [Service Worker 生命周期](translation/the-service-worker-lifecycle.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
