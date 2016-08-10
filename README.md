@@ -44,6 +44,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [看看 eBay 的速度与风范](translation/browse-ebay-with-style-and-speed-ebay.md)
 
+- [JavaScript  与函数式编程](translation/JavaScript-and-Functional-Programming.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
