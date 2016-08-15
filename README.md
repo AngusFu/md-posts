@@ -46,6 +46,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [JavaScript  与函数式编程](translation/JavaScript-and-Functional-Programming.md)
 
+- [自动化、跨浏览器的 JavaScript 单元测试](translation/set-up-automated-cross-browser-javascript-unit-testing.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
