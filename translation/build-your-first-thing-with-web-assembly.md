@@ -90,7 +90,7 @@ for(var i = 0; i < 5; i++) {
 
 ![building binaryen](http://p8.qhimg.com/t01f65f188a46e3d538.png)
 
-(*图： Windows 下的工具构建*)
+*图： Windows 下的工具构建*
 
 对 WebAssembly 团队来说，发布可以工作的二进制文件意味着朝着正确的方向前进了一大步。
 
@@ -120,11 +120,11 @@ for(var i = 0; i < 5; i++) {
 
 ![building wasm from asm.js](http://cultureofdevelopment.com/img/binaryen-transform.png)
 
-（*图：将 asm.js 转换为 wasm 二进制码*）
+*图：将 asm.js 转换为 wasm 二进制码*
 
 ![wasm bytecode](http://p6.qhimg.com/t01a5965c1d53b30e20.png)
 
-（*wasm 二进制码*）
+*图：wasm 二进制码*
 
 紧接着，安装最新版的 [Firefox](https://www.mozilla.org/en-US/firefox/new/) 或 [Chrome Canary](https://www.google.com/chrome/browser/canary.html)，并启用 WebAssembly。
 
@@ -160,7 +160,7 @@ fetch("my-math-module.wasm")
 
 ![wasm in a browser](http://p8.qhimg.com/t01631e5f7d290aae84.png)
 
-（*浏览器中运行的 wasm （至少尝试运行了） *）
+*浏览器中运行的 wasm （至少尝试运行了） *
 
 我估计需要去提交一个 bug 报告了。记着，一切都是实验性的、不稳定的，所以当此类事情发生的时候，别灰心丧气。
 
