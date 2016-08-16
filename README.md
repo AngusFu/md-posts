@@ -48,6 +48,8 @@ You can also see [my blog online](https://segmentfault.com/blog/wemlin).
 
 - [自动化、跨浏览器的 JavaScript 单元测试](translation/set-up-automated-cross-browser-javascript-unit-testing.md)
 
+- [WebAssembly  初尝](translation/build-your-first-thing-with-web-assembly.md)
+
 ## notes & articles
 
 - [关于移动端 rem 布局的一些总结](blog/about-rem-layout.md)
