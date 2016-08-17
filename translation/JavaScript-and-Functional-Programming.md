@@ -8,8 +8,9 @@
 
 > 原文：[https://bethallchurch.github.io/JavaScript-and-Functional-Programming/](https://bethallchurch.github.io/JavaScript-and-Functional-Programming/)
 
+> **译者注：推荐一篇译文，[《函数式编程术语解析》](http://pinggod.com/2016/函数式编程术语解析)。**
 
->本文是我在 2016 年 7 月 29 号听 Kyle Simpson 精彩的课程**Functional-Light JavaScript》**时所做的笔记（外加个人的深入研究）（[幻灯片在这](https://speakerdeck.com/getify/functional-light-javascript)）。
+*本文是我在 2016 年 7 月 29 号听 Kyle Simpson 精彩的课程**《Functional-Light JavaScript》**时所做的笔记（外加个人的深入研究）（[幻灯片在这](https://speakerdeck.com/getify/functional-light-javascript)）。*
 
 长久以来，面向对象在 JavaScript 编程范式中占据着主导地位。不过，最近人们对函数式编程的兴趣正在增长。函数式编程是一种编程风格，它强调将程序状态变化（即*副作用[side effect]*）的次数减到最小。因此，函数式编程鼓励使用*不可变*数据（immutable data）和纯函数（pure functions）（“纯”意味着没有副作用的）。它也更倾向于使用*声明式*的风格，鼓励使用命名良好的函数，这样就能使用在我们视线之外的那些打包好的细节实现，通过描述希望发生什么以进行编码。
 
@@ -248,7 +249,7 @@ const composeMany = function ( ...args ) {
 
 组合函数的最终形式取决于你所需的通用性水平，以及偏好的 API 类型。
 
-### Partial 函数应用
+### 偏函数（Partial Application）
 
 *Partial 函数应用* 指定函数参数中的一个或多个，然后返回一个稍后会被完整调用的函数。
 
